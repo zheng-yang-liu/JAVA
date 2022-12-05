@@ -20,4 +20,10 @@ public class Dog extends Pet{
         return strain;
     }
 
+    //对父类的方法进行重写
+    //方法名必须和父类一样以及参数个数
+    public void ShowInfo(){
+        super.ShowInfo();
+        System.out.println("品种："+strain);
+    }
 }

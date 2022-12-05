@@ -11,4 +11,10 @@ public class Penguin extends Pet {
     public String getSex(){
         return sex;
     }
+
+    //对父类的方法进行重写
+    public void ShowInfo(){
+        super.ShowInfo();
+        System.out.println("性别："+sex);
+    }
 }
