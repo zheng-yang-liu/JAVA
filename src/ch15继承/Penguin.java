@@ -1,4 +1,4 @@
-package ch15;
+package ch15继承;
 //继承-子类(语法extends Pet)
 public class Penguin extends Pet {
     private String sex;//性别

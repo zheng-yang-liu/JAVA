@@ -1,4 +1,4 @@
-package ch15;
+package ch15继承;
 //继承
 public class ElectronicPet {
     public static void main(String[] args) {

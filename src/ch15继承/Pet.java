@@ -1,6 +1,8 @@
-package ch15;
+package ch15继承;
 //继承-父类（Dog，Penguin）的父类
-public class Pet {
+//abstract抽象类显示实例化
+//final设置类不能被继承
+public abstract class Pet {
     //private私有的
     private String name="无名";
     private int health=100;

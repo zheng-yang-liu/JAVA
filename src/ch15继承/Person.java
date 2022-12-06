@@ -1,4 +1,4 @@
-package ch15;
+package ch15继承;
 
 public class Person {
     String name;
