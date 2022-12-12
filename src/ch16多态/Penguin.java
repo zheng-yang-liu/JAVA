@@ -13,9 +13,12 @@ public class Penguin extends Pet{
     public void eat(){
         super.health +=3;
         System.out.println("企鹅"+super.name+"吃饱了,健康值加3");
-    }
+    }//游泳
     public void swit(){
-        System.out.println("游泳");
+        super.health-=10;
+        super.love+=5;
+        System.out.println("游泳企鹅"+name+"健康值减10，亲密度加5");
     }
+
 
 }

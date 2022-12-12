@@ -1,20 +1,30 @@
 package ch15继承.zy2;
 
-public class Bus extends MotoVehicle {
-    int SeatCount; // 座次
-    int Daily_rate; // 日租费
-    int Pedestrians; // 租车数量
+public final class Bus extends MotoVehicle {
+    int SeatCount;//座位数
+    int DailyRent;//租用一天的费用
+    int BueCount;//租车数量
+    //构造方法
 
-
-
-    Bus(int no, int SeatCount) {// no表示租车数量，SeatCount表示车的座位数
-        if (SeatCount <= 16)
-            Daily_rate = 800;
-        else if (SeatCount > 16)
-            Daily_rate = 1500;
-        this.Pedestrians = no;
+    public Bus(String Brand,int SeatCount){
+        super(Brand,SeatCount);
+        this.SeatCount = SeatCount;
     }
-    public int CalcRent(int days) {
-        return days*Daily_rate*Pedestrians;
+    //方法获取座位数
+    public int getSeatCount(){
+        return SeatCount;
     }
+    //座位
+    public Bus(int SeatCount) {
+        if (SeatCount <= 16){
+            DailyRent = 800;
+        }else if (SeatCount > 16){
+            DailyRent = 1500;
+        }
+    }
+    //重写父类中的抽象方法，计算租金
+    public int CalculateRent(int days){
+        return days*DailyRent;
+    }
+
 }
