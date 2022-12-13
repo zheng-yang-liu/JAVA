@@ -1,5 +1,11 @@
 package ch16多态.zy1;
-//机动车类(抽象类)
+
+/**
+ * 父类车辆
+ *
+ * @author thexu
+ * @date 2022/12/14
+ *///机动车类(抽象类)
 public abstract class MotoVehicle {
     private String No; // 车牌号
     private String Brand;//品牌

@@ -1,5 +1,11 @@
 package ch16多态.zy1;
 
+/**
+ * 公共汽车
+ *
+ * @author thexu
+ * @date 2022/12/14
+ */
 public final class Bus extends MotoVehicle {
     int SeatCount;//座位数
     int DailyRent;//租用一天的费用

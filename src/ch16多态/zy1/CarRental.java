@@ -1,6 +1,13 @@
 package ch16多态.zy1;
 import java.util.*;
-public class zy {
+
+/**
+ * 汽车租赁
+ *
+ * @author thexu
+ * @date 2022/12/14
+ */
+public class CarRental {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int Days; //租赁天数
@@ -16,7 +23,7 @@ public class zy {
             int choose=scanner.nextInt();
             switch (choose){
                 case 1:
-                    System.out.println("轿车车型（《别克商务舱GL8》《宝马550i》《别克林荫大道》）");
+                    System.out.println("轿车车型（别克商务舱GL8；宝马550i；别克林荫大道）");
                     System.out.print("请输入轿车的车型：");
                     String CarType=scanner.next();
                     motos[i]= new Car(CarType);

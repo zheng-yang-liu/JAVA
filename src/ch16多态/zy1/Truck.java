@@ -1,5 +1,11 @@
 package ch16多态.zy1;
 
+/**
+ * 卡车
+ *
+ * @author thexu
+ * @date 2022/12/14
+ */
 public class Truck extends MotoVehicle{
     int Tonnage;//吨位
     public Truck(int Tonnage){

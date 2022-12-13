@@ -1,5 +1,11 @@
 package ch16多态.zy1;
 
+/**
+ * 车
+ *
+ * @author thexu
+ * @date 2022/12/14
+ */
 public final class Car extends MotoVehicle {
     String Type;//型号
     int CarCount;//租车数量
