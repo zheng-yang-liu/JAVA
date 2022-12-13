@@ -10,10 +10,15 @@ public class Penguin extends Pet{
         super.ShowInfo();
         System.out.println("性别："+sex);
     }
+
+
     public void eat(){
         super.health +=3;
         System.out.println("企鹅"+super.name+"吃饱了,健康值加3");
-    }//游泳
+    }
+
+
+    //游泳
     public void swit(){
         super.health-=10;
         super.love+=5;

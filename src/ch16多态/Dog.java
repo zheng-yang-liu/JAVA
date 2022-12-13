@@ -14,6 +14,7 @@ public class Dog extends Pet{
         super.health +=3;
         System.out.println("狗狗"+super.name+"吃饱了,健康值加3");
     };
+
     //玩飞盘
     public void feipan(){
         super.health-=10;
